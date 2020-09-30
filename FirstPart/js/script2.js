@@ -20,3 +20,29 @@ function learnLang(lang, callback){
 learnLang('Французкий', function(){
     console.log('и я его знаю!');
 });
+
+// копии(не глубокии) массивов и объектов
+let obj = {
+    a: 1,
+    b: 2
+}
+let objNew = Object.assign({}, obj);
+
+
+let arr = [1, 2, 3, 4];
+let arrNew = arr.slice();
+
+
+const vidio = ['youtube', 'rutube', 'vimeo'],
+      blogs = ['wordpress', 'livejournal', 'blogger'],
+      internet = [...vidio, ...blogs, 'INTER'];
+
+console.log(internet);
+
+function log(a,b,c){
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+let num = [2, 4, 5, 7];
+log(...num);
