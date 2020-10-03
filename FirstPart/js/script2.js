@@ -48,3 +48,8 @@ function log(a,b,c){
 }
 let num = [2, 4, 5, 7];
 log(...num);
+
+
+let test = 1;
+let test2 = [] + 1 + 2;
+console.log(test2);
