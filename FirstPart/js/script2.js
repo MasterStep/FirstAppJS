@@ -27,6 +27,8 @@ let obj = {
     b: 2
 }
 let objNew = Object.assign({}, obj);
+let {a, b} = obj;
+console.log(a + ' ' + b);
 
 
 let arr = [1, 2, 3, 4];
